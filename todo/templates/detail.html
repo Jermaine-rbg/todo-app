@@ -1,0 +1,7 @@
+<form action="{% url 'task' id %}" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" name="save" value="Save" />
+    <input type="submit" name="delete" value="Delete" />
+    <input type="submit" name="complete" value="Mark Complete" />
+</form>
